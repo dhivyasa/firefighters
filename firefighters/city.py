@@ -18,9 +18,9 @@ class City(ABC):
         """
         pass
 
-    @property
+
     @abstractmethod
-    def fire_dispatch(self):
+    def fire_dispatch(self, num_fire_fighters:int):
         """Get the city's FireDispatch.
 
         :return: the city's FireDispatch
@@ -81,9 +81,9 @@ class CityImpl(City):
     def fire_station(self) -> Building:
         return self._fire_station
 
-    @property
-    def fire_dispatch(self):
-        return self._fire_dispatch
+
+    def fire_dispatch(self, num_fire_fighters:int):
+        return self._fire_dispatch(num_fire_fighters)
 
     @property
     def x_dimension(self) -> int:

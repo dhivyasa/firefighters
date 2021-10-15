@@ -21,5 +21,3 @@ A Firefighter knows their own location and how far they have traveled throughout
 
 
 
-
-
